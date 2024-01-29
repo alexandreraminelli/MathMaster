@@ -9,42 +9,59 @@
   --cor04: #e3e7e9;
   --cor05: #f5a30c;
 
-  /* Predefinições neumorphism */
-  --neumorphism-claro-convex-background: linear-gradient(145deg, #f3f7f9, #ccd0c2);
-  --neumorphism-claro-convex-sombra1: #c1c4c6;
-  --neumorphism-claro-convex-sombra2: #ffffff;
+  /* Predefinições background */
+  --background-claro: var(--cor04);
+  --background-escuro: var(--cor02);
+  --background-uso: var(--background-claro);
 
-  --neumorphism-claro-pressed-background: #e3e7e9;
-  --neumorphism-claro-pressed-sombra2: #ffffff;
+  /* Predefinições sombra */
+  --sombra-clara: rgba(255, 255, 255, 0.5);
+  --sombra-escura: rgba(0, 0, 0, 0.5);
+  --sombra-uso: var(--sombra-escura);
 
-  --neumorphism-escuro-convex-background: linear-gradient(145deg, #232428, #1e1f21);
-  --neumorphism-escuro-convex-sombra1: #1c1d1f;
-  --neumorphism-escuro-convex-sombra2: #26272b;
-
-  --neumorphism-escuro-pressed-background: #212225;
-  --neumorphism-escuro-pressed-sombra1: #1c1d1f;
-  --neumorphism-escuro-pressed-sombra2: #26272b;
-
-  /* Neumorphism em uso */
-  --neumorphism-convex-background: var(--neumorphism-claro-convex-background);
-  --neumorphism-convex-sombra1: var(--neumorphism-claro-convex-sombra1);
-  --neumorphism-convex-sombra2: var(--neumorphism-claro-convex-sombra2);
-
-  --neumorphism-pressed-background: var(--neumorphism-claro-pressed-background);
-  --neumorphism-pressed-sombra1: var(--neumorphism-claro-pressed-sombra1);
-  --neumorphism-pressed-sombra2: var(--neumorphism-claro-pressed-sombra2);
-
-  /* Fonte */
+  /* Fontes */
   --fonte-padrao: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: var(--cor04);
+  background-color: var(--background-uso);
   font-family: var(--fonte-padrao);
 }
 
 .titulo-pagina {
-  font-size: 3.9rem;
+  font-size: 3.4rem;
   font-weight: 500;
   text-align: center;
+}
+
+section.lista-de-blocos {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+ul.lista-de-blocos {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+ul.lista-de-blocos a {
+  display: block;
+  height: 150px;
+  width: 90%;
+
+  background-color: var(--background-uso);
+  border-radius: 20px;
+  box-shadow: 0 0 25px 1px var(--sombra-uso);
+
+  /* Animação */
+  /* RESOLVER PROBLEMA COM ANIMAÇÃO DEPOIS */
+  /* transition: 2s; */
+}
+ul.lista-de-blocos a:hover {
+  box-shadow: inset 0 0 25px 1px var(--sombra-uso);
 }
