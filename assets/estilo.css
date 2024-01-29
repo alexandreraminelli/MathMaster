@@ -1,0 +1,50 @@
+/* Importação do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Paleta de cores */
+  --cor01: #1b1b1b;
+  --cor02: #212225;
+  --cor03: #4a11ef;
+  --cor04: #e3e7e9;
+  --cor05: #f5a30c;
+
+  /* Predefinições neumorphism */
+  --neumorphism-claro-convex-background: linear-gradient(145deg, #f3f7f9, #ccd0c2);
+  --neumorphism-claro-convex-sombra1: #c1c4c6;
+  --neumorphism-claro-convex-sombra2: #ffffff;
+
+  --neumorphism-claro-pressed-background: #e3e7e9;
+  --neumorphism-claro-pressed-sombra2: #ffffff;
+
+  --neumorphism-escuro-convex-background: linear-gradient(145deg, #232428, #1e1f21);
+  --neumorphism-escuro-convex-sombra1: #1c1d1f;
+  --neumorphism-escuro-convex-sombra2: #26272b;
+
+  --neumorphism-escuro-pressed-background: #212225;
+  --neumorphism-escuro-pressed-sombra1: #1c1d1f;
+  --neumorphism-escuro-pressed-sombra2: #26272b;
+
+  /* Neumorphism em uso */
+  --neumorphism-convex-background: var(--neumorphism-claro-convex-background);
+  --neumorphism-convex-sombra1: var(--neumorphism-claro-convex-sombra1);
+  --neumorphism-convex-sombra2: var(--neumorphism-claro-convex-sombra2);
+
+  --neumorphism-pressed-background: var(--neumorphism-claro-pressed-background);
+  --neumorphism-pressed-sombra1: var(--neumorphism-claro-pressed-sombra1);
+  --neumorphism-pressed-sombra2: var(--neumorphism-claro-pressed-sombra2);
+
+  /* Fonte */
+  --fonte-padrao: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--cor04);
+  font-family: var(--fonte-padrao);
+}
+
+.titulo-pagina {
+  font-size: 3.9rem;
+  font-weight: 500;
+  text-align: center;
+}
